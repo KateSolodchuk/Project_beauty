@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    font-family:sans-serif ;
+    font-family: sans-serif;
     margin: 0;
 }
 
@@ -17,8 +17,13 @@ body {
 }
 
 .header {
-    background: #F8F6F7;
+    background: #F8F6F7; 
+    background-image: url("img/фон.png"); 
+}
+
+.header .container {
     padding: 30px 0 130px;
+    
 }
 
 .header-top {
@@ -55,10 +60,11 @@ margin-right: 10px;
     text-decoration: none;
     font-size: 18px;
     line-height: 14px;
-    margin-bottom: 8px;
+    margin-bottom: 15px;
 }
 
 .info {
+    margin-top: 5px;
     font-size: 11px;
     line-height: 14px;
 }
@@ -70,7 +76,27 @@ margin-right: 10px;
     text-decoration: none;
 }
 
+.container1 {
+    display: flex;
+    justify-content: space-around;
+}
 
+.girl {
+    width: 524px;
+    height: 510px;
+    left: 658px;
+    top: 81px;
+
+}
+
+.network li {
+    list-style: none;
+}
+
+.network li:not(:last-child) {
+    padding-bottom: 10px;
+}
+    
 
 .credo h1 {
     font-size: 48px;
@@ -91,4 +117,49 @@ color: #FFFFFF;
 font-size: 14px;
 line-height: 14px;
 text-align: center;
+}
+
+.main {
+    background:#E5E5E5;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex: none;
+    padding: 20px 165px;
+}
+
+.content-footer {
+    text-align: left;
+}
+
+.copyright {
+    font-size: 12px;
+    line-height: 15px;
+    color: #333333;
+    margin-bottom: 8px;
+}
+
+.privacy {
+    font-size: 12px;
+    line-height: 15px;
+    color: #278AFF;
+}
+
+.navigation-footer ul {
+    display: flex;
+    list-style: none;
+}
+
+.navigation-footer li:not(:last-child) {
+margin-right: 20px;
+}
+
+.navigation-footer ul li a {
+    color: #333333;
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration: none;
+    
 }
