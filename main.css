@@ -121,6 +121,80 @@ text-align: center;
 
 .main {
     background:#E5E5E5;
+    max-height: 840px;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    width: 1110px;
+    align-items: center;
+    margin-left: 165px;
+    margin-bottom: 108px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    max-width: 540px;
+    color: #333333;
+    margin-right: 125px;
+    margin-top: 94px;
+}
+
+h2 {
+    font-size: 48px;
+    line-height: 59px;
+}
+
+.lead {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 16px;
+}
+
+.welcome {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.video {
+    margin-top: 190px;
+}
+
+.advantages-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 10px;
+    width: 1110px;
+    height: 176px;
+    margin-left: 165px;
+
+    
+}
+
+.advantages-item {
+    display: flex;
+    flex-direction: column;
+    flex: none;
+    width: 296px;
+    height: 66px;
+    text-align: center;
+    
+}
+
+.advantages-name {
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.advantages-description {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #333333;
 }
 
 .footer {
