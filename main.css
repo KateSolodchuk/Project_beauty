@@ -14,11 +14,14 @@ body {
 .container {
     max-width: 1110px;
     margin: auto;
+    
 }
 
 .header {
     background: #F8F6F7; 
     background-image: url("img/фон.png"); 
+    position: relative;
+    max-height: 600px;
 }
 
 .header .container {
@@ -42,7 +45,7 @@ body {
 
 
 .navigation li:not(:last-child) {
-margin-right: 10px;
+    margin-right: 10px;
 }
 
 .navigation ul li a {
@@ -78,15 +81,33 @@ margin-right: 10px;
 
 .container1 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .girl {
+    position: absolute;
+    bottom: 0;
+    left: 658px;
+    top: 90px;
     width: 524px;
     height: 510px;
-    left: 658px;
-    top: 81px;
+    z-index: 0;
+}
 
+.girl:before {
+    content: "";
+    width: 472px;
+    height: 472px;
+    border-radius: 50%;
+    background-color: #FB9475;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.girl img {
+    display: block;
+    position: relative;
 }
 
 .network li {
@@ -112,16 +133,21 @@ margin-right: 10px;
     line-height: 24px;
 }
 
+
 .credo button {
-color: #FFFFFF;
-font-size: 14px;
-line-height: 14px;
-text-align: center;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    background-color: #FB9475;
+    padding: 17px 30px;
+    border-radius: 24px;
 }
+
 
 .main {
     background:#E5E5E5;
-    max-height: 840px;
+    max-height: 860px;
 }
 
 .main-container {
@@ -145,6 +171,7 @@ text-align: center;
 h2 {
     font-size: 48px;
     line-height: 59px;
+    margin-bottom: 32px;
 }
 
 .lead {
@@ -156,10 +183,24 @@ h2 {
 .welcome {
     font-size: 16px;
     line-height: 26px;
+    text-align: left;
 }
 
 .video {
     margin-top: 190px;
+    position: relative;
+    text-align: center;
+}
+
+.videotext {
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
 
 .advantages-container {
@@ -170,8 +211,7 @@ h2 {
     width: 1110px;
     height: 176px;
     margin-left: 165px;
-
-    
+    margin-right: 165px; 
 }
 
 .advantages-item {
@@ -195,7 +235,16 @@ h2 {
     line-height: 22px;
     text-align: center;
     color: #333333;
+   
+    
 }
+
+.adv-img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 
 .footer {
     display: flex;
