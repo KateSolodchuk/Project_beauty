@@ -67,6 +67,7 @@ h2 {
 
 .phone-info {
     text-align: right;
+    min-width: fit-content;
 }
 
 .phone {
@@ -163,8 +164,7 @@ h2 {
     justify-content: space-between;
     width: 1110px;
     align-items: center;
-    margin-left: 165px;
-    margin-bottom: 108px;
+    margin: 0 auto;
 }
 
 .about {
@@ -214,8 +214,7 @@ h2 {
     padding: 0px 10px;
     width: 1110px;
     height: 176px;
-    margin-left: 165px;
-    margin-right: 165px; 
+    margin: 0 auto; 
 }
 
 .advantages-item {
