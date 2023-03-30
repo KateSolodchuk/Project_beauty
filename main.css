@@ -162,12 +162,12 @@ h2 {
 }
 
 .main {
-    background:#E5E5E5;
-    max-height: 860px;
+    background:#FFFFFF;
 }
 
 .main-container {
     display: flex;
+    flex: none;
     justify-content: space-between;
     width: 1110px;
     align-items: center;
@@ -202,6 +202,10 @@ h2 {
     margin-top: 190px;
     position: relative;
     text-align: center;
+    cursor: pointer;
+    width: 445px;
+    height: 296px;
+    border-radius: 8px;
 }
 
 .videotext {
@@ -217,10 +221,10 @@ h2 {
 .advantages-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 0px 10px;
     width: 1110px;
-    height: 176px;
     margin: 0 auto; 
 }
 
@@ -229,7 +233,6 @@ h2 {
     flex-direction: column;
     flex: none;
     width: 296px;
-    height: 66px;
     text-align: center;
     
 }
@@ -283,7 +286,7 @@ h2 {
 }
 
 .footer-navigation-item:not(:last-child) {
-margin-right: 20px;
+    margin-right: 20px;
 }
 
 .footer-navigation-link {
