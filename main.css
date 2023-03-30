@@ -11,22 +11,27 @@ body {
     margin: 0;
 }
 
+h2 {
+    font-size: 48px;
+    line-height: 59px;
+}
+
 .container {
+    width: 100%;
     max-width: 1110px;
-    margin: auto;
+    margin: 0 auto;
     
 }
 
 .header {
     background: #F8F6F7; 
-    background-image: url("img/фон.png"); 
+    background-image: url("img/background.png"); 
     position: relative;
     max-height: 600px;
 }
 
 .header .container {
-    padding: 30px 0 130px;
-    
+    padding: 30px 0 130px; 
 }
 
 .header-top {
@@ -37,18 +42,17 @@ body {
     justify-content: space-between;
 }
 
-
-.navigation ul {
+.navigation-list {
     display: flex;
     list-style: none; 
+    padding: 0;
 }
 
-
-.navigation li:not(:last-child) {
+.navigation-item:not(:last-child) {
     margin-right: 10px;
 }
 
-.navigation ul li a {
+.navigation-link {
     width: 107px;
     height: 17px;
     color: #333333;
@@ -79,7 +83,7 @@ body {
     text-decoration: none;
 }
 
-.container1 {
+.header-content {
     display: flex;
     justify-content: space-between;
 }
@@ -110,14 +114,13 @@ body {
     position: relative;
 }
 
-.network li {
+.network-item {
     list-style: none;
 }
 
-.network li:not(:last-child) {
+.network-item:not(:last-child) {
     padding-bottom: 10px;
-}
-    
+}  
 
 .credo h1 {
     font-size: 48px;
@@ -133,7 +136,6 @@ body {
     line-height: 24px;
 }
 
-
 .credo button {
     color: #FFFFFF;
     font-size: 14px;
@@ -143,7 +145,6 @@ body {
     padding: 17px 30px;
     border-radius: 24px;
 }
-
 
 .main {
     background:#E5E5E5;
@@ -168,12 +169,9 @@ body {
     margin-top: 94px;
 }
 
-h2 {
-    font-size: 48px;
-    line-height: 59px;
+.main-container-title {
     margin-bottom: 32px;
 }
-
 .lead {
     font-size: 20px;
     line-height: 32px;
@@ -235,16 +233,12 @@ h2 {
     line-height: 22px;
     text-align: center;
     color: #333333;
-   
-    
 }
 
 .adv-img {
     margin-left: auto;
     margin-right: auto;
 }
-
-
 
 .footer {
     display: flex;
@@ -270,16 +264,16 @@ h2 {
     color: #278AFF;
 }
 
-.navigation-footer ul {
+.footer-navigation-list {
     display: flex;
     list-style: none;
 }
 
-.navigation-footer li:not(:last-child) {
+.footer-navigation-item:not(:last-child) {
 margin-right: 20px;
 }
 
-.navigation-footer ul li a {
+.footer-navigation-link {
     color: #333333;
     font-size: 12px;
     line-height: 15px;
