@@ -25,8 +25,8 @@ h2 {
 .header {
     background: #F8F6F7; 
     background-image: url("img/background.png"); 
-    position: relative;
     max-height: 600px;
+    width: 100%;
 }
 
 .header .container {
@@ -96,28 +96,31 @@ h2 {
     justify-content: space-between;
 }
 
-.girl {
-    position: absolute;
-    bottom: 0;
-    left: 658px;
-    top: 90px;
+.header-girl {
+    display: block;
+    position: relative;
+    bottom: 110px;
+    right: 45px;
     width: 524px;
     height: 510px;
-    z-index: 0;
+    z-index: 1;
+    overflow: hidden;
 }
 
-.girl:before {
+.header-girl:before {
     content: "";
+    display: block;
     width: 472px;
     height: 472px;
     border-radius: 50%;
     background-color: #FB9475;
     position: absolute;
-    bottom: 0;
+    bottom: -110px;
     right: 0;
+    z-index: 0;
 }
 
-.girl img {
+.header-girl-photo {
     display: block;
     position: relative;
 }
