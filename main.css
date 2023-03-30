@@ -43,6 +43,8 @@ h2 {
 
 .navigation-list {
     display: flex;
+    flex-wrap: wrap;
+    gap: 8px 0;
     list-style: none; 
     padding: 0;
 }
