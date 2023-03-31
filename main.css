@@ -167,7 +167,6 @@ h2 {
 
 .main-container {
     display: flex;
-    flex: none;
     justify-content: space-between;
     width: 1110px;
     align-items: center;
