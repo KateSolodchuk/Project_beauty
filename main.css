@@ -16,6 +16,12 @@ h2 {
     line-height: 59px;
 }
 
+h4 {
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+}
+
 .container {
     width: 100%;
     max-width: 1110px;
@@ -41,7 +47,7 @@ h2 {
     justify-content: space-between;
 }
 
-.navigation-list {
+.navigation__list {
     display: flex;
     flex-wrap: wrap;
     gap: 8px 0;
@@ -49,19 +55,22 @@ h2 {
     padding: 0;
 }
 
-.navigation-item:not(:last-child) {
+.navigation__item:not(:last-child) {
     margin-right: 10px;
 }
 
-.navigation-link {
+.navigation__link {
     width: 107px;
     height: 17px;
     color: #333333;
     font-size: 14px;
+}
+
+.navigation__link_about {
     text-decoration: none;
 }
 
-.navigation-link:hover {
+.navigation__link:hover {
     color: #00BF78;
 }
 
@@ -252,6 +261,100 @@ h2 {
 .adv-img {
     margin-left: auto;
     margin-right: auto;
+}
+
+.card-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.card-list__img {
+    border-radius: 8px;
+}
+
+.card-list__img_service {
+    width: 350px;
+    height: 180px;
+}
+
+.btn {
+    color: #FFFFFF;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    background-color: #FB9475;
+    padding: 10px 20px;
+    border-radius: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.navigation__item_prices:not(:last-child) {
+    margin-right: 28px;
+}
+
+.navigation__link_prices:link {
+    text-decoration: none;
+}
+
+.navigation__link_prices:visited {
+    color: #00BF78;
+    text-decoration: underline #00BF78;
+}
+
+.price-list {
+    list-style: none;
+    display: flex;
+    flex-basis: auto;
+    flex-flow: column wrap;
+    height: 304px;
+    width: 1110px
+    justify-content: space-between;
+}
+
+.price-list__item {
+    display: flex;
+    flex-shrink: 0;
+    width: 444px;
+    justify-content: space-between; 
+    align-items: baseline;
+    padding-right: 120px;
+}
+
+.price-list__value {
+    color: #00BF78;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: right;
+}
+
+.price-list__info {
+    text-align: left;
+}
+
+.price-list__descr {
+    font-size: 14px;
+    line-height: 17px;
+    color: #333333;
+}
+
+.section_gray {
+    background:#F8F6F7;
+}
+
+.card-list__img_masters {
+width: 255px;
+height: 300px;
+}
+
+.card-list__img_masters:hover{
+filter: brightness(40%)
+}
+.experience {
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
 }
 
 .footer {
