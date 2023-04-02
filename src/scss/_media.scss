@@ -1,0 +1,39 @@
+@media only screen and (max-width: 1280px) { 
+} 
+/* Medium Devices, Desktops */ 
+@media only screen and (max-width: 992px) { 
+    .header-girl {
+        opacity: 0.4;
+    }
+    .credo {
+        text-align: center;}
+} 
+/* Small Devices, Tablets */ 
+@media only screen and (max-width: 768px) {
+    .header-top {
+       flex-direction: column; 
+    }
+} 
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width: 480px) { 
+
+    .header-girl {
+        visibility: hidden;
+    }
+
+    .header-top {
+        margin-bottom: 60px;
+    }
+
+    .header .container {
+        padding-bottom: 80px;
+
+    }
+} 
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width: 320px) { 
+    .header .navigation {
+        visibility: hidden;
+    }
+}
+

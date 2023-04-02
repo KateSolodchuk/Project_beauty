@@ -1,43 +1,14 @@
-html {
-    box-sizing: border-box;
-}
-
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
-body {
-    font-family: sans-serif;
-    margin: 0;
-    min-width: 320px;;
-}
-
-h2 {
-    font-size: 48px;
-    line-height: 59px;
-}
-
-h4 {
-    font-size: 18px;
-    line-height: 22px;
-    color: #333333;
-}
-
-.container {
-    width: 100%;
-    max-width: 1110px;
-    margin: 0 auto;
-}
+@import 'libs';
+@import 'common';
 
 .header {
     background: #F8F6F7; 
     background-image: url("img/background.png"); 
     max-height: 600px;
     width: 100%;
-}
-
-.header .container {
+    .container {
     padding: 30px 0 130px; 
+}
 }
 
 .header-top {
@@ -199,6 +170,7 @@ h4 {
 .main-container-title {
     margin-bottom: 32px;
 }
+
 .lead {
     font-size: 20px;
     line-height: 32px;
@@ -247,7 +219,6 @@ h4 {
     flex: none;
     width: 296px;
     text-align: center;
-    
 }
 
 .advantages-name {
@@ -320,9 +291,8 @@ h4 {
     height: 304px;
     width: 1110px;
     justify-content: space-between; 
-}
 
-.price-list__item {
+    &__item {
     display: flex;
     flex-shrink: 0;
     width: 444px;
@@ -330,21 +300,23 @@ h4 {
     align-items: baseline;
 }
 
-.price-list__value {
+&__value {
     color: #00BF78;
     font-size: 20px;
     line-height: 24px;
     text-align: right;
 }
 
-.price-list__info {
+&__info {
     text-align: left;
 }
 
-.price-list__descr {
+&__descr {
     font-size: 14px;
     line-height: 17px;
     color: #333333;
+}
+
 }
 
 .section_gray {
@@ -426,6 +398,7 @@ h4 {
     justify-content: space-between;
     align-items: baseline;
 }
+
 .card-list__img_works {
     width: 338px;
     height: 338px;
@@ -493,42 +466,4 @@ h4 {
     text-decoration: none;   
 }
 
-
-@media only screen and (max-width: 1280px) { 
-} 
-/* Medium Devices, Desktops */ 
-@media only screen and (max-width: 992px) { 
-    .header-girl {
-        opacity: 0.4;
-    }
-    .credo {
-        text-align: center;}
-} 
-/* Small Devices, Tablets */ 
-@media only screen and (max-width: 768px) {
-    .header-top {
-       flex-direction: column; 
-    }
-} 
-/* Extra Small Devices, Phones */ 
-@media only screen and (max-width: 480px) { 
-
-    .header-girl {
-        visibility: hidden;
-    }
-
-    .header-top {
-        margin-bottom: 60px;
-    }
-
-    .header .container {
-        padding-bottom: 80px;
-
-    }
-} 
-/* Custom, iPhone Retina */ 
-@media only screen and (max-width: 320px) { 
-    .header .navigation {
-        visibility: hidden;
-    }
-}
+@import 'media';
