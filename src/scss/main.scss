@@ -130,8 +130,15 @@
     list-style: none;
 }
 
-&__item:not(:last-child) {
+&__item_horizontal {
+    display: inline;
+}
+&__item_horizontal:not(:last-child) {
     padding-bottom: 10px;
+}  
+
+&__item:not(:last-child) {
+    padding-right: 25px;
 }  
 }
 
@@ -466,18 +473,122 @@
     text-align: center;
     color: #333333;
     margin: auto;
+    padding-top: 80px;
 }
 
 .brands-list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: baseline;
+    padding-top: 50px;
+    padding-bottom: 50px;
     
     &__img {
-        filter: saturate(50%);
+        opacity: 0.33;
     }
     
 }
+
+.container_connection{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.contacts {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    .adress {
+        font-size: 16px;
+        line-height: 20px;
+        padding-bottom: 20px;
+    }
+
+    .phone {
+        font-size: 16px;
+        line-height: 14px;
+    }
+
+    .email {
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration-line: underline;
+        color: #278AFF;
+    }
+
+    .social {
+        font-size: 12px;
+        line-height: 14px;
+        padding-top: 32px;
+    }
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    width: 445px;
+    height: 406px;
+
+    &__lead {
+        font-size: 14px;
+        line-height: 20px;
+        width: 374px;
+    }
+
+    &__inner {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 20px;
+    }
+
+    &__input {
+        border-color: #A0A0A0;
+        border-radius: 5px;
+        align-self: stretch;
+        width: 375px;
+        height: 44px;
+    }
+
+    .submit {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    
+    &__btn {
+    color: #FFFFFF;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    background-color: #FB9475;
+    border-radius: 24px;
+    align-self: stretch;
+    border: none;
+    cursor: pointer;
+    width: 375px;
+    height: 48px;
+}
+}
+
+
 
 .footer {
     display: flex;
