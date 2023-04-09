@@ -27,6 +27,7 @@ h2 {
     background-image: url("img/background.png"); 
     max-height: 600px;
     width: 100%;
+    position: relative;
 }
 
 .header .container {
@@ -98,9 +99,9 @@ h2 {
 
 .header-girl {
     display: block;
-    position: relative;
-    bottom: 110px;
-    right: 45px;
+    position: absolute;
+    bottom: 0px;
+    right: 350px;
     width: 524px;
     height: 510px;
     z-index: 1;
@@ -168,7 +169,7 @@ h2 {
 .main-container {
     display: flex;
     justify-content: space-between;
-    width: 1110px;
+    max-width: 1110px;
     align-items: center;
     margin: 0 auto;
 }
@@ -223,7 +224,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0px 10px;
-    width: 1110px;
+    max-width: 1110px;
     margin: 0 auto; 
 }
 
