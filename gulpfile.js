@@ -1,7 +1,11 @@
-const { src, dest, series, parallel, watch } = require('gulp');
+const { src, dest, series, watch, parallel } = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
-const clean = require('gulp-clean');
+const postcss = require('gulp-postcss');
+const autoprefixer = require('autoprefixer');
+const cssnano = require('cssnano');
+const sourcemaps = require('gulp-sourcemaps');
 const browserSync = require('browser-sync').create();
+const clean = require('gulp-clean');
 
 // Таск компиляции SASS в CSS
 function buildSass() {
