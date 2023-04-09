@@ -1,6 +1,7 @@
 @media only screen and (max-width: 1280px) { 
 } 
 /* Medium Devices, Desktops */ 
+
 @media only screen and (max-width: 992px) { 
     .header-girl {
         opacity: 0.4;
@@ -11,13 +12,94 @@
 } 
 /* Small Devices, Tablets */ 
 @media only screen and (max-width: 768px) {
-    .header-top {
-       flex-direction: column; 
+    
+    .header__top {
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .main { 
+        &__container {
+        flex-direction: column;
+    }
+
+    &__about {
+        align-items: center;
+        text-align: center;
+    }
+
+    &__item {
+        align-items: center;
+        text-align: center;
+    }
+
+    &__video {
+        align-items: center;
+        text-align: center;
     }
 } 
+
+    .advantages {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+        &__item {
+        padding-top: 50px;
+    }
+    }
+
+    .section{
+    
+        &__inner_masters {
+        flex-direction: column;
+        align-items: center;
+        }
+
+        &__header {
+        text-align: center;
+        }
+
+        &__actions {
+        text-align: center;
+        }
+
+        &__header_works {
+        flex-direction: column;
+        align-items: center;
+        }
+    }
+
+    .container_connection{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contacts {
+        text-align: center;
+        align-items: center;
+    }
+
+    .price-list__value {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .brands-list {
+        flex-direction: column;
+    }
+
+} 
+
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width: 480px) { 
 
+    .header__top {
+        flex-direction: column;
+        align-items: left;
+    }
+    
     .header-girl {
         visibility: hidden;
     }
@@ -37,4 +119,3 @@
         visibility: hidden;
     }
 }
-

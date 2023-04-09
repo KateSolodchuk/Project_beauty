@@ -144,24 +144,23 @@
 
 .credo {
     text-align: left;
-}
 
-.credo-title {
+    &__title {
     font-size: 48px;
     color: #333333;
-    margin-bottom: 17px;
+    padding-bottom: 17px;
     line-height: 59px;
 }
 
-.credo-promise {
+    &__promise {
     font-size: 20px;
     color: #333333;
-    margin-bottom: 59px;
+    padding-bottom: 59px;
     line-height: 24px;
     max-width: 315px;
 }
 
-.credo-button {
+    &__button {
     color: #FFFFFF;
     font-size: 14px;
     line-height: 14px;
@@ -172,6 +171,9 @@
     border: none;
     cursor: pointer;
 }
+
+}
+
 
 .main {
     background:#FFFFFF;
@@ -189,18 +191,18 @@
         flex-direction: column;
         max-width: 540px;
         color: #333333;
-        margin-right: 125px;
-        margin-top: 94px;
+        padding-right: 125px;
+        padding-top: 94px;
     }
 
     &__title {
-        margin-bottom: 32px;
+        padding-bottom: 32px;
     }
     
     &__lead {
         font-size: 20px;
         line-height: 32px;
-        margin-bottom: 16px;
+        padding-bottom: 16px;
     }
     
     &__item {
@@ -210,7 +212,6 @@
     }
 
     &__video {
-        margin-top: 190px;
         position: relative;
         text-align: center;
         cursor: pointer;
@@ -220,6 +221,7 @@
     }
     
     &__videotext {
+        display: block;
         font-size: 16px;
         line-height: 26px;
         color: #FFFFFF;
@@ -250,7 +252,7 @@
         flex: none;
         width: 296px;
         text-align: center;
-        margin-top: 110px;
+        padding-top: 110px;
     }
     
     &__name {
