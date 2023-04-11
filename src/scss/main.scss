@@ -318,13 +318,17 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: baseline;
-    }
-    
-    &__inner_works {
-        flex-wrap: nowrap;
-        box-sizing: content-box;
+        padding-left: 230px;
+        padding-right: 230px;
     }
 
+}
+
+.container-wider {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 1440px;
+    justify-content: space-between;
 }
 
 .card-list {
@@ -392,9 +396,15 @@
         text-transform: uppercase;
     }
 
+    &_works {
+        padding-right: 30px;
+    }
+
     &__img_works {
         width: 338px;
         height: 338px;
+        border: 1px solid;
+        padding-bottom: 30%;
     }
     
     &__img_works:hover {
