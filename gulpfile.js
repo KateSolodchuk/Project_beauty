@@ -1,19 +1,17 @@
-const { src, dest, series, parallel, watch } = require('gulp');
+const { src, dest, series, watch, parallel } = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
-const clean = require('gulp-clean');
-const browserSync = require('browser-sync').create();
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const sourcemaps = require('gulp-sourcemaps');
+const browserSync = require('browser-sync').create();
+const clean = require('gulp-clean');
 
 // Таск компиляции SASS в CSS
 function buildSass() {
     return src('src/scss/**/*.scss')
         .pipe(sourcemaps.init())
-        .pipe(sass({ 
-            includePaths: ['./node_modules'] 
-        }).on('error', sass.logError))
+        .pipe(sass({ includePaths: ['./node_modules'] }).on('error', sass.logError))
         .pipe(
             postcss([
                 autoprefixer({
@@ -23,25 +21,21 @@ function buildSass() {
                 cssnano()
             ])
         )
-
-        .pipe(sourcemaps.write())
         .pipe(dest('src/css'))
         .pipe(dest('dist/css'))
         .pipe(browserSync.stream());
-
 }
 
 // Таск работы с html файлами
 function buildHtml() {
     return src('src/**/*.html')
-        .pipe(dest('dist'))
-        .pipe(browserSync.stream());
+    .pipe(dest('dist'))
+    .pipe(browserSync.stream());
 }
 
 // Таск копирования статичных файлов
 function copy() {
-    return src(['src/img']).pipe(dest('dist'));
-}
+    return src(['src/img/**/*.*'], { base: 'src' }).pipe(dest('dist'));}
 
 // Таск очистки dist
 function cleanDist() {
