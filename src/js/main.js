@@ -1,5 +1,5 @@
 let menuBtn = document.querySelector('.menu-btn');
-let menuLink = document.querySelectorAll('.menu__navigation-link');
+let menuLink = document.querySelector('.menu__navigation-link');
 let menu = document.querySelector('.menu');
 
 menuBtn.addEventListener('click', function(){
@@ -7,20 +7,14 @@ menuBtn.addEventListener('click', function(){
 	menu.classList.toggle('active');
 });
 
-//эта штука не работает вообще
-menuLink.forEach (function() {
-	menuLink.addEventListener('click', function(menuOff) {
-		menu.classList.toggle('active');
-		menuBtn.classList.toggle('active');
-});
-});
-
-/*menuLink.addEventListener('click', function(menuOff){
+//как бы работает, но только с первой ссылкой
+menuLink.addEventListener('click', function(){
 	menu.classList.toggle('active');
 	menuBtn.classList.toggle('active');
 })
-эта штука работает ожидаемо онли на первую ссылку в списке*/
 
+
+//тоже работает с первой ссылкой
 let navLink = document.querySelector('.navigation__link_prices');
 let price = document.querySelector('.section__inner_prices');
 
@@ -29,5 +23,19 @@ navLink.addEventListener('click', function(){
 });
 
 
+  let contactForm = document.getElementById('contactForm');
+  
+  contactForm.addEventListener('submit', function (event) {
+	event.preventDefault();
+	const { name, phone } = this.elements;
+	console.log({
+		name: name.value,
+		phone: phone.value
+	});
+
+	this.reset();
+  });
+
+  
 
 
