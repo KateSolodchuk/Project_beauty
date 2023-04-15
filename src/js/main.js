@@ -19,9 +19,14 @@ menuLink.forEach (function() {
 	menu.classList.toggle('active');
 	menuBtn.classList.toggle('active');
 })
-эта работает ожидаемо онли на первую ссылку в списке*/
+эта штука работает ожидаемо онли на первую ссылку в списке*/
 
+let navLink = document.querySelector('.navigation__link_prices');
+let price = document.querySelector('.section__inner_prices');
 
+navLink.addEventListener('click', function(){
+	price.classList.toggle('active');
+});
 
 
 

@@ -376,6 +376,11 @@
         justify-content: space-between;
     }
 
+    &__inner_prices {
+        visibility: hidden;
+    }
+
+
     &__inner_service-card {
         justify-content: flex-start;
     }
@@ -401,9 +406,11 @@
         padding-left: 230px;
         padding-right: 230px;
     }
-
 }
 
+.section__inner_prices.active {
+    visibility: visible;
+}
 
 .container-wider {
     display: flex;
