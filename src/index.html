@@ -6,13 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="/src/slider/itc-slider.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
+            <div class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="menu">
+                <nav class="menu__navigation">
+                   <ul class="menu__navigation-list">
+                    <li class="menu__navigation-item"><a class="menu__navigation-link" href="#prices">Услуги и цены</a></li>
+                    <li class="menu__navigation-item"><a class="menu__navigation-link" href="#masters">Мастера</a></li>
+                    <li class="menu__navigation-item"><a class="menu__navigation-link" href="#works">Наши работы</a></li>
+                    <li class="menu__navigation-item"><a class="menu__navigation-link" href="#about-us">О нас</a></li>
+                    <li class="menu__navigation-item"><a class="menu__navigation-link" href="#connection">Контакты</a></li>
+                   </ul>
+                </nav>
+            </div>
             <div class="header__top">
+
                 <a class="logo" href="/">Мир красоты</a>
-                <nav class="navigation navigation_theme_about">
+                <!--<nav class="navigation navigation_theme_about">
                     <ul class="navigation__list">
                         <li class="navigation__item"><a class="navigation__link navigation__link_about" href="#">Услуги и цены</a></li>
                         <li class="navigation__item"><a class="navigation__link navigation__link_about" href="#">Мастера</a></li>
@@ -20,7 +39,7 @@
                         <li class="navigation__item"><a class="navigation__link navigation__link_about" href="#">О нас</a></li>
                         <li class="navigation__item"><a class="navigation__link navigation__link_about" href="#">Контакты</a></li>
                     </ul>
-                </nav>
+                </nav>-->
                 <div class="phone-info">
                     <a class="phone" href="tel:84996861762">8 (499) 686-17-62</a>
                     <div class="info">с 10.00 до 19.00 без выходных</div> 
@@ -49,7 +68,7 @@
     </header>
 
     <main class="main">
-        <div class="main__container">
+        <div id="about-us" class="main__container">
             <div class="main__about">
             <h2 class="main__title">О салоне</h2>
             <p class="main__lead">Мир красоты - это уютный салон в самом центре города. Здесь работают профессиональные визажисты, стилисты и мастера татуажа</p>
@@ -332,43 +351,43 @@
                     
                     <div class="section__inner section__inner_works">
                         <div class="container-wider">
-                        <div class="card-list card-list_works">
-                            <a href="#" class="card-list__img card-list__img_mask card-list__img_works">
-                                <img src="img/eyes_1.png" alt="card-list">
-                                <div class="card-list__mask">""</div>   
-                                <img class="card-list__icon" src="img/loop.png" alt="loop">
-                                <div class="card-list__text">Увеличить</div>
-                            </a>
+                            <div class="card-list card-list_works">
+                                <a href="#" class="card-list__img card-list__img_mask card-list__img_works">
+                                    <img src="img/eyes_1.png" alt="card-list">
+                                    <div class="card-list__mask">""</div>   
+                                    <img class="card-list__icon" src="img/loop.png" alt="loop">
+                                    <div class="card-list__text">Увеличить</div>
+                                </a>
+                            </div>
+
+                            <div class="card-list card-list_works">
+                                 <a href="#" class="card-list__img card-list__img_mask card-list__img_works">
+                                    <img src="img/full_2.png" alt="card-list">
+                                    <div class="card-list__mask">""</div>
+                                    <img class="card-list__icon" src="img/loop.png" alt="loop">
+                                    <div class="card-list__text">Увеличить</div>
+                                </a>
+                            </div>
+
+                            <div class="card-list card-list_works">
+                                 <a href="#" class="card-list__img card-list__img_mask card-list__img_works">
+                                    <img src="img/nails_3.png" style="width: 338px; height: 338px;"  alt="card-list">
+                                    <div class="card-list__mask">""</div>
+                                    <img class="card-list__icon" src="img/loop.png" alt="loop">
+                                    <div class="card-list__text">Увеличить</div>
+                                </a>
+                            </div>
+
+                            <div class="card-list card-list_works">
+                                <a href="#" class="card-list__img card-list__img_mask card-list__img_works">
+                                    <img src="img/hair_4.png" alt="card-list">
+                                    <div class="card-list__mask">""</div>
+                                    <img class="card-list__icon" src="img/loop.png" alt="loop">
+                                    <div class="card-list__text">Увеличить</div>
+                                </a>
+                            </div>
                         </div>
-
-                    <div class="card-list card-list_works">
-                        <a href="#" class="card-list__img card-list__img_mask card-list__img_works">
-                            <img src="img/full_2.png" alt="card-list">
-                            <div class="card-list__mask">""</div>
-                            <img class="card-list__icon" src="img/loop.png" alt="loop">
-                            <div class="card-list__text">Увеличить</div>
-                        </a>
-                    </div>
-
-                    <div class="card-list card-list_works">
-                        <a href="#" class="card-list__img card-list__img_mask card-list__img_works">
-                            <img src="img/nails_3.png" style="width: 338px; height: 338px;"  alt="card-list">
-                            <div class="card-list__mask">""</div>
-                            <img class="card-list__icon" src="img/loop.png" alt="loop">
-                            <div class="card-list__text">Увеличить</div>
-                        </a>
-                    </div>
-
-                    <div class="card-list card-list_works">
-                        <a href="#" class="card-list__img card-list__img_mask card-list__img_works">
-                            <img src="img/hair_4.png" alt="card-list">
-                            <div class="card-list__mask">""</div>
-                            <img class="card-list__icon" src="img/loop.png" alt="loop">
-                            <div class="card-list__text">Увеличить</div>
-                        </a>
-                    </div>
-                </div>
-                </div>
+                    </div>    
         </section> <!--#works-->
 
         <section id="brands" class="section">
@@ -438,6 +457,5 @@
     </footer>
 
     <script src="./js/main.js"></script>
-    
 </body>
 </html>
