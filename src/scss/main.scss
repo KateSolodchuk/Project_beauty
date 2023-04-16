@@ -99,6 +99,10 @@
     &__navigation-item:not(:last-child) {
         padding-bottom: 2%;
     }
+
+    &__navigation-item {
+        padding-right: 2%;
+    }
 }
 
 .menu.active {

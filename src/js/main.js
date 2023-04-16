@@ -13,6 +13,11 @@ menuLink.addEventListener('click', function(){
 	menuBtn.classList.toggle('active');
 })
 
+/*странная попытка сделать для всего, все равно не работает
+for (let menuLink of document.querySelectorAll('.menu__navigation-link')){
+	menu.classList.toggle('active');
+	menuBtn.classList.toggle('active');
+}*/
 
 //тоже работает с первой ссылкой
 let navLink = document.querySelector('.navigation__link_prices');
